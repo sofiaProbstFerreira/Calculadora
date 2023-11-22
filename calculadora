@@ -1,0 +1,24 @@
+<DocType html>
+<script language="javascript"> op=""; //operadores globais.
+num1="0";
+num2="0";
+resp="";
+PrimeiroNumero=true;
+PontoDecimal=false;
+memoria="";
+
+function verificatecla(caracter){
+    if(window.event) {//Internet Explorer
+    var tecla = event.keyCode;}
+    //alert (PrimeiroNumero);
+    if((tecla>47)&&(tecla<58)) {  //Se for numero 
+        tecla=tecla -48;
+        mostra(tecla);}
+        if(tecla == 46){ //Se for ponto mostra(".");
+    }
+    if(tecla==43){ //Se for + coleta("+");
+    }
+    if(tecla==45) {
+        
+    }
+}
