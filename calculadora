@@ -1,24 +1,46 @@
-<DocType html>
+<!DocType html>
 <script language="javascript"> op=""; //operadores globais.
-num1="0";
-num2="0";
-resp="";
+num1 ="0";
+num2 ="0";
+resp ="";
 PrimeiroNumero=true;
 PontoDecimal=false;
 memoria="";
 
 function verificatecla(caracter){
-    if(window.event) {//Internet Explorer
-    var tecla = event.keyCode;}
-    //alert (PrimeiroNumero);
-    if((tecla>47)&&(tecla<58)) {  //Se for numero 
+    if(window.event) {
+    var tecla = event.keyCode;
+    
+    if((tecla>47)&&(tecla<58))  
         tecla=tecla -48;
         mostra(tecla);}
-        if(tecla == 46){ //Se for ponto mostra(".");
-    }
-    if(tecla==43){ //Se for + coleta("+");
-    }
-    if(tecla==45) {
-        
+        if(tecla == 46)
+    
+    if(tecla==43)
+    
+    if(tecla==45)
+    
+    if(tecla==47)
+
+    if(tecla==42)
+
+    if(tecla==13)
+
+    if ((tecla==44) || (tecla==27))
+
+    if ((tecla==109) || (tecla==77))
+
+    if ((tecla==82) || (tecla==114))
+
+    if ((tecla==99) || (tecla==67))
+    document.formulario.vazio.focus();
+}
+{
+      
+    function inicio(){
+        document.formulario.calculo.value="0";
+        document.formulario.calculo.style.color= "#0000FF";
+        document.formulario.calculo.style.background= "DDDDDD";
+        document.formulario.vazio.focus();
     }
 }
